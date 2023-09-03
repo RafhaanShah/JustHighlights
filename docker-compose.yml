@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  just-highlights:
+    container_name: just-highlights
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./public:/app/public"
+      - "./src/:/app/src"
