@@ -37,6 +37,7 @@ export async function fetchSoccerPosts() {
           return false;
         }
 
+        // Look for: Team A [1] - 0 Team B
         const titleRegex = /.+\[?\d\]?\s?-\s?\[?\d\]?.+/;
 
         if (!titleRegex.test(title)) {
