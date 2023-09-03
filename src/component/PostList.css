@@ -1,47 +1,60 @@
 /* Style for the PostList container */
 .post-list-container {
-    background-color: #333; /* Dark background color */
-    padding: 20px; /* Add some padding */
-  }
-  
-  /* Style for the title */
-  .post-list-title {
-    color: #fff; /* White font color */
-    font-size: 28px; /* Font size for the title */
-    margin-bottom: 20px; /* Spacing below the title */
-  }
-  
-  /* Style for each post card */
-  .post-card {
-    background-color: #444; /* Darker background for cards */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Spacing inside each card */
-    margin-bottom: 20px; /* Spacing between cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle lift */
-  }
-  
-  /* Style for post titles */
-  .post-title {
-    font-size: 24px; /* Larger font size for titles */
-    color: #fff; /* White text color */
-    margin-bottom: 10px; /* Spacing below titles */
-  }
-  
-  /* Style for the iframe within cards */
+  background-color: #333; /* Dark background color */
+  padding: 20px; /* Add some padding */
+}
+
+/* Style for the title */
+.post-list-title {
+  color: #fff; /* White font color */
+  font-size: 28px; /* Font size for the title */
+  margin-bottom: 20px; /* Spacing below the title */
+}
+
+/* Style for each post card */
+.post-card {
+  background-color: #444; /* Darker background for cards */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Spacing inside each card */
+  margin-bottom: 20px; /* Spacing between cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle lift */
+}
+
+/* Style for post titles */
+.post-title {
+  font-size: 24px; /* Larger font size for titles */
+  color: #fff; /* White text color */
+  margin-bottom: 10px; /* Spacing below titles */
+}
+
+/* Style for the iframe within cards */
+.post-iframe {
+  border: none; /* Remove iframe border */
+}
+
+/* Style for clickable hyperlinks */
+.post-link {
+  font-size: 18px; /* Font size for links */
+  color: #00bcd4; /* Link color */
+  text-decoration: none; /* Remove underlines */
+}
+
+.post-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
   .post-iframe {
-    width: 600px; /* Make the iframe responsive to its container */
-    height: 400px; /* Set a fixed height for the iframe */
-    border: none; /* Remove iframe border */
+    max-width: 100%; /* Set max width for mobile */
+    height: auto; /* Allow height to adjust based on content for mobile */
   }
-  
-  /* Style for clickable hyperlinks */
-  .post-link {
-    font-size: 18px; /* Font size for links */
-    color: #00bcd4; /* Link color */
-    text-decoration: none; /* Remove underlines */
+}
+
+/* Media query for desktop devices */
+@media screen and (min-width: 768px) {
+  .post-iframe {
+    width: 500px; /* Set width for desktop */
+    height: 315px; /* Set height for desktop */
   }
-  
-  .post-link:hover {
-    text-decoration: underline; /* Underline on hover */
-  }
-  
+}
