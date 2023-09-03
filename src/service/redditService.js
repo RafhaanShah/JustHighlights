@@ -44,7 +44,7 @@ export async function fetchSoccerPosts() {
         }
 
         if (!hasKeyword(title, soccerKeywords)) {
-          return true;
+          return false;
         }
 
         return true;

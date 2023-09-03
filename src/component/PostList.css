@@ -29,8 +29,8 @@
   
   /* Style for the iframe within cards */
   .post-iframe {
-    width: 100%; /* Make the iframe responsive to its container */
-    height: 315px; /* Set a fixed height for the iframe */
+    width: 600px; /* Make the iframe responsive to its container */
+    height: 400px; /* Set a fixed height for the iframe */
     border: none; /* Remove iframe border */
   }
   

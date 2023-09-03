@@ -13,7 +13,6 @@ function PostList({ posts }) {
               title={`Embedded Video ${index}`}
               className="post-iframe"
               src={post.link}
-              frameBorder="0"
               allowFullScreen
             ></iframe>
           ) : (
