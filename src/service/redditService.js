@@ -2,7 +2,8 @@ import axios from 'axios';
 import { soccerKeywords, soccerVideoSites, soccerEmbedSites } from '../res/soccer';
 
 function getRedditLink(subreddit) {
-  return `https://www.reddit.com/r/${subreddit}/new.json?sort=new&limit=1000&t=day`
+  const time = new Date().getTime();
+  return `https://www.reddit.com/r/${subreddit}/new.json?sort=new&limit=1000&t=day&timestamp=${time}`
   // return `https://www.reddit.com/search.json?q=subreddit:${subreddit}&type=link&sort=new&t=day`
 }
 
